@@ -41,18 +41,21 @@ public class CategoriaController {
 				.orElse(ResponseEntity.status(HttpStatus.NOT_FOUND).build());
 	}
 
-	@GetMapping("/categoria/{categoria}")
-	public ResponseEntity<List<Categoria>> getByCategoria(@PathVariable String categoria) {
-		return ResponseEntity.ok(categoriaRepository.findAllByTipoContainingIgnoreCase(categoria));
+	@GetMapping("/tipo/{tipo}")
+	public ResponseEntity<List<Categoria>> getByCategoria(@PathVariable String tipo) {
+	    return ResponseEntity.ok(categoriaRepository.findAllByTipoContainingIgnoreCase(tipo));
 	}
 
 	@PostMapping
 	public ResponseEntity<Categoria> post(@Valid @RequestBody Categoria categoria) {
-		return ResponseEntity.status(HttpStatus.CREATED).body(categoriaRepository.save(categoria));
-
+		if (categoria.getTipo() != null) {
+	        return ResponseEntity.status(HttpStatus.CREATED).body(categoriaRepository.save(categoria));
+	    } else {
+	        throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "A categoria não está configurado corretamente.", null);
+	    }
 	}
 
-	@PutMapping
+	@PutMapping("/{id}")
 	public ResponseEntity<Categoria> put(@PathVariable Long id, @Valid @RequestBody Categoria categoria) {
 		if (categoriaRepository.existsById(id)) {
 			categoria.setId(id);
