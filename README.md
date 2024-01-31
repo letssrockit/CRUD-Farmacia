@@ -8,14 +8,13 @@ Implementação de um CRUD para Produtos, com ênfase no correto relacionamento 
 
 ## Funcionalidades Principais
 
-Criar Categoria: Endpoint para criar uma nova categoria.
-Listar Categorias: Endpoint para recuperar todas as categorias existentes.
-Detalhes da Categoria: Endpoint para recuperar uma categoria específica por ID.
-Atualizar Categoria: Endpoint para atualizar os dados de uma categoria existente.
-Excluir Categoria: Endpoint para excluir uma categoria.
-Criar Produto: Endpoint para criar um novo produto associado a uma categoria existente.
-Listar Produtos: Endpoint para recuperar todos os produtos existentes.
-Detalhes do Produto: Endpoint para recuperar um produto específico por ID.
-Atualizar Produto: Endpoint para atualizar os dados de um produto existente.
-Excluir Produto: Endpoint para excluir um produto.
-Garantir a correta implementação do relacionamento entre as entidades de Categoria e Produto.
+- **Criar Categoria:** Endpoint para criar uma nova categoria.
+-  **Listar Categorias:** Endpoint para recuperar todas as categorias existentes.
+- **Detalhes da Categoria:** Endpoint para recuperar uma categoria específica por ID.
+- **Atualizar Categoria:** Endpoint para atualizar os dados de uma categoria existente.
+- **Excluir Categoria:** Endpoint para excluir uma categoria.
+- **Criar Produto:** Endpoint para criar um novo produto associado a uma categoria existente.
+- **Listar Produtos:** Endpoint para recuperar todos os produtos existentes.
+- **Detalhes do Produto:** Endpoint para recuperar um produto específico por ID.
+- **Atualizar Produto:** Endpoint para atualizar os dados de um produto existente.
+- **Excluir Produto:** Endpoint para excluir um produto.
