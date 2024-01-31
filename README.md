@@ -1,3 +1,7 @@
+<div align="center"> 
+  <img src="https://github.com/letssrockit/CRUD-Farmacia/assets/129013545/4e0fc18b-75ee-4982-b172-7ff69812132c" width="0px"/>
+</div>
+
 # Sobre o Projeto
 Bem-vindo ao Projeto de Sistema de Farmácia! Este sistema foi criado em resposta às necessidades únicas enfrentadas por empresas farmacêuticas no gerenciamento de medicamentos, estoque, vendas, atendimento ao cliente e conformidade regulatória. O objetivo é proporcionar uma solução eficiente e integrada que eleve a qualidade dos serviços oferecidos aos seus clientes.
 
