@@ -63,7 +63,7 @@ public class ProdutoController {
 		 }
 	}
 	
-	@PutMapping ("/atualizar")
+	@PutMapping("/atualizar")
 	public ResponseEntity<Produto> put(@Valid @RequestBody Produto produto) {
 	    if (produtoRepository.existsById(produto.getId())) {
 	        if (categoriaRepository.existsById(produto.getCategoria().getId())) {
